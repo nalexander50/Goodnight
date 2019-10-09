@@ -12,6 +12,10 @@
 		0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C30E234C15FE008AB036 /* Assets.xcassets */; };
 		0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C311234C15FE008AB036 /* Preview Assets.xcassets */; };
 		0138C315234C15FE008AB036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0138C313234C15FE008AB036 /* Main.storyboard */; };
+		0138C31E234C350D008AB036 /* SleepManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31D234C350C008AB036 /* SleepManager.swift */; };
+		0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31F234C35AF008AB036 /* PMSetInterface.swift */; };
+		0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */; };
+		01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,11 @@
 		0138C314234C15FE008AB036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0138C316234C15FE008AB036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0138C317234C15FE008AB036 /* Goodnight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goodnight.entitlements; sourceTree = "<group>"; };
+		0138C31D234C350C008AB036 /* SleepManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepManager.swift; sourceTree = "<group>"; };
+		0138C31F234C35AF008AB036 /* PMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetInterface.swift; sourceTree = "<group>"; };
+		0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetBatteryInformation.swift; sourceTree = "<group>"; };
+		01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		01446AD7234D7249000B0318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				0138C30A234C15FD008AB036 /* AppDelegate.swift */,
-				0138C30C234C15FD008AB036 /* ContentView.swift */,
-				0138C30E234C15FE008AB036 /* Assets.xcassets */,
-				0138C313234C15FE008AB036 /* Main.storyboard */,
-				0138C316234C15FE008AB036 /* Info.plist */,
-				0138C317234C15FE008AB036 /* Goodnight.entitlements */,
+				0138C31D234C350C008AB036 /* SleepManager.swift */,
+				01446AD5234D712F000B0318 /* PMSet Utilities */,
+				01446AD3234D7100000B0318 /* View */,
+				01446AD4234D710E000B0318 /* Supporting Files */,
 				0138C310234C15FE008AB036 /* Preview Content */,
+				01446AD7234D7249000B0318 /* README.md */,
 			);
 			path = Goodnight;
 			sourceTree = "<group>";
@@ -72,6 +81,35 @@
 				0138C311234C15FE008AB036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01446AD3234D7100000B0318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0138C313234C15FE008AB036 /* Main.storyboard */,
+				0138C30C234C15FD008AB036 /* ContentView.swift */,
+				01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01446AD4234D710E000B0318 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0138C317234C15FE008AB036 /* Goodnight.entitlements */,
+				0138C316234C15FE008AB036 /* Info.plist */,
+				0138C30E234C15FE008AB036 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01446AD5234D712F000B0318 /* PMSet Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0138C31F234C35AF008AB036 /* PMSetInterface.swift */,
+				0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */,
+			);
+			path = "PMSet Utilities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0138C30D234C15FD008AB036 /* ContentView.swift in Sources */,
+				0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */,
+				0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */,
+				01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */,
+				0138C31E234C350D008AB036 /* SleepManager.swift in Sources */,
 				0138C30B234C15FD008AB036 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +323,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Goodnight/Goodnight.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Goodnight/Supporting Files/Goodnight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Preview Content\"";
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Goodnight/Info.plist;
+				INFOPLIST_FILE = "Goodnight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -304,14 +346,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Goodnight/Goodnight.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Goodnight/Supporting Files/Goodnight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Preview Content\"";
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Goodnight/Info.plist;
+				INFOPLIST_FILE = "Goodnight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

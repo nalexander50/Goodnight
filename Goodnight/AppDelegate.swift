@@ -11,29 +11,37 @@ import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    var window: NSWindow!
-
+    
+    private var statusBarItem: NSStatusItem? = nil
+    private var statusBarItemPopover: NSPopover? = nil
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
-        // Create the window and set the content view. 
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+        self.statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        self.statusBarItem?.button?.title = "💤"
+        
+        self.statusBarItemPopover = NSPopover()
+        self.statusBarItemPopover!.behavior = .transient
+        self.statusBarItemPopover!.contentViewController = NSHostingController(rootView: MenuBarPopoverView())
+        
+        self.statusBarItem?.button?.action = #selector(self.toggleStatusBarItemPopover)
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    
+    @objc private func toggleStatusBarItemPopover() {
+        if let popover = self.statusBarItemPopover {
+            if let button = self.statusBarItem?.button {
+                if (popover.isShown) {
+                    popover.performClose(self)
+                } else {
+                    popover.show(relativeTo: .zero, of: button, preferredEdge: .minY)
+                    NSApp.activate(ignoringOtherApps: true)
+                }
+            }
+        }
     }
-
+    
+    func applicationWillResignActive(_ notification: Notification) {
+        self.statusBarItemPopover?.performClose(self)
+    }
 
 }
 
