@@ -50,6 +50,7 @@
 			children = (
 				0138C309234C15FD008AB036 /* Goodnight */,
 				0138C308234C15FD008AB036 /* Products */,
+				01446AD7234D7249000B0318 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +71,6 @@
 				01446AD3234D7100000B0318 /* View */,
 				01446AD4234D710E000B0318 /* Supporting Files */,
 				0138C310234C15FE008AB036 /* Preview Content */,
-				01446AD7234D7249000B0318 /* README.md */,
 			);
 			path = Goodnight;
 			sourceTree = "<group>";
