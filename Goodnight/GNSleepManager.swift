@@ -8,16 +8,20 @@
 
 import Foundation
 
-class SleepManager {
+class GNSleepManager {
+    
+    // MARK: - Properties
     
     private var sleepTimer: Timer? = nil
     
-    public func sleep() {
+    // MARK: - Public Methods
+    
+    func sleep() {
         let interface = PMSetInterface()
         interface.sleepNow()
     }
     
-    public func scheduleSleep(at date: Date) {
+    func scheduleSleep(at date: Date) {
         if let existingTimer = self.sleepTimer {
             existingTimer.invalidate()
             self.sleepTimer = nil
@@ -31,7 +35,7 @@ class SleepManager {
         self.sleepTimer = newTimer
     }
     
-    public func cancelScheduledSleep() {
+    func cancelScheduledSleep() {
         self.sleepTimer?.invalidate()
         self.sleepTimer = nil
     }

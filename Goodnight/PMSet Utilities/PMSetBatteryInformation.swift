@@ -30,13 +30,6 @@ struct PMSetBatteryInformation {
         case ac
     }
     
-    enum BatteryLevel {
-        case unknown
-        case critical(perctange: Int, timeRemaining: TimeInterval)
-        case normal(perctange: Int, timeRemaining: TimeInterval)
-        case full(perctange: Int, timeRemaining: TimeInterval)
-    }
-    
     enum ChargingStatus {
         case unknown
         case discharging
@@ -46,9 +39,10 @@ struct PMSetBatteryInformation {
     
     // MARK: - Properties
     
-    public let powerSource: PowerSource
-    public let batterylevel: BatteryLevel
-    public let chargingStatus: ChargingStatus
+    let powerSource: PowerSource
+    let chargingStatus: ChargingStatus
+    let batteryPercentage: Double
+    let batteryTimeRemaining: TimeInterval
     
     // MARK: - Initializers
     
@@ -58,7 +52,7 @@ struct PMSetBatteryInformation {
     init(fromOutput output: String) {
         self.powerSource = PMSetBatteryInformation.determinePowerSource(from: output)
         self.chargingStatus = PMSetBatteryInformation.determineChargingStatus(from: output)
-        self.batterylevel = PMSetBatteryInformation.determineBatteryLevel(from: output)
+        (self.batteryPercentage, self.batteryTimeRemaining) = PMSetBatteryInformation.determineBatteryLevel(from: output)
     }
     
     /**
@@ -95,8 +89,8 @@ struct PMSetBatteryInformation {
         }
     }
     
-    private static func determineBatteryLevel(from input: String) -> BatteryLevel {
-        return .normal(perctange: 50, timeRemaining: 50)
+    private static func determineBatteryLevel(from input: String) -> (Double, TimeInterval) {
+        return (0.0, 0.0)
     }
     
 }
