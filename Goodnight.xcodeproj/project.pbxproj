@@ -32,6 +32,7 @@
 		0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetBatteryInformation.swift; sourceTree = "<group>"; };
 		01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
 		01446AD7234D7249000B0318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01DC3E66235032D700FF1CDF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		0138C2FE234C15FD008AB036 = {
 			isa = PBXGroup;
 			children = (
+				01DC3E66235032D700FF1CDF /* .gitignore */,
 				0138C309234C15FD008AB036 /* Goodnight */,
 				0138C308234C15FD008AB036 /* Products */,
 				01446AD7234D7249000B0318 /* README.md */,
@@ -170,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DC3E67235032D700FF1CDF /* .gitignore in Resources */,
 				0138C315234C15FE008AB036 /* Main.storyboard in Resources */,
 				0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */,
 				0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */,
