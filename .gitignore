@@ -1,0 +1,17 @@
+## Xcode State
+**/xcuserdata/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Package Manager
+Packages/
+Package.pins
+Package.resolved
+.build/
