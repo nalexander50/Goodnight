@@ -44,6 +44,7 @@
 		01DDB56423501269002B78DF /* GNSleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepTimer.swift; sourceTree = "<group>"; };
 		01DDB56623501775002B78DF /* GNActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNActionableMenuItem.swift; sourceTree = "<group>"; };
 		01DDB56823501998002B78DF /* NSMenu+ActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenu+ActionableMenuItem.swift"; sourceTree = "<group>"; };
+		01DC3E66235032D700FF1CDF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		0138C2FE234C15FD008AB036 = {
 			isa = PBXGroup;
 			children = (
+				01DC3E66235032D700FF1CDF /* .gitignore */,
 				0138C309234C15FD008AB036 /* Goodnight */,
 				0138C308234C15FD008AB036 /* Products */,
 				01446AD7234D7249000B0318 /* README.md */,
@@ -204,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DC3E67235032D700FF1CDF /* .gitignore in Resources */,
 				0138C315234C15FE008AB036 /* Main.storyboard in Resources */,
 				0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */,
 				0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */,
