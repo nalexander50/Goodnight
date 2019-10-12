@@ -34,9 +34,23 @@ class GNMenuBuilder {
         
         topLevelMenu.addItem(NSMenuItem.separator())
         
+        topLevelMenu.addItem(self.buildPreferencesItem())
+        topLevelMenu.addItem(self.buildAboutItem())
+        
+        topLevelMenu.addItem(NSMenuItem.separator())
+        
         topLevelMenu.addItem(self.buildQuitItem())
         
         return topLevelMenu
+    }
+    
+    // MARK: - Key Equivalents
+    
+    enum KeyEquivalents: String {
+        case untilDate = "u"
+        case whileAppRunning = "a"
+        case preferences = ","
+        case quit = "q"
     }
     
     // MARK: - Private Methods
@@ -93,7 +107,7 @@ class GNMenuBuilder {
     }
     
     private func buildUntilItem() -> NSMenuItem {
-        let item = GNActionableMenuItem(title: "Until...", keyEquivalent: "u") {
+        let item = GNActionableMenuItem(title: "Until...", keyEquivalent: KeyEquivalents.untilDate.rawValue) {
             print(GNSleepTimer.until(Date()))
         }
         item.indentationLevel = 1
@@ -102,7 +116,7 @@ class GNMenuBuilder {
     }
     
     private func buildWhileRunningItem() -> NSMenuItem {
-        let item = GNActionableMenuItem(title: "While App Is Running...", keyEquivalent: "a") {
+        let item = GNActionableMenuItem(title: "While App Is Running...", keyEquivalent: KeyEquivalents.whileAppRunning.rawValue) {
             self.popoverManager.open()
             print("Running")
         }
@@ -111,8 +125,24 @@ class GNMenuBuilder {
         return item
     }
     
+    private func buildAboutItem() -> NSMenuItem {
+        let aboutItem = GNActionableMenuItem(title: "About Goodnight", keyEquivalent: "") {
+            print("About")
+        }
+        
+        return aboutItem
+    }
+    
+    private func buildPreferencesItem() -> NSMenuItem {
+        let prefItem = GNActionableMenuItem(title: "Preferences...", keyEquivalent: KeyEquivalents.preferences.rawValue) {
+            print("Preferences")
+        }
+        
+        return prefItem
+    }
+    
     private func buildQuitItem() -> NSMenuItem {
-        let item = GNActionableMenuItem(title: "Quit Goodnight", keyEquivalent: "u") {
+        let item = GNActionableMenuItem(title: "Quit Goodnight", keyEquivalent: KeyEquivalents.quit.rawValue) {
             NSApp.terminate(self)
         }
         
