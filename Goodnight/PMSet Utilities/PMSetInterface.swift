@@ -45,13 +45,13 @@ class PMSetInterface {
     
     // MARK: - Public Methods
     
-    public func sleepNow() {
+    func sleepNow() {
         let args = ["sleepnow"]
         let process = self.createProcess(withArguments: args)
         process.launch()
     }
     
-    public func getBatteryStatus() -> PMSetBatteryInformation? {
+    func getBatteryStatus() -> PMSetBatteryInformation? {
         let args = ["-g", "batt"]
         let process = self.createProcess(withArguments: args)
         process.launch()

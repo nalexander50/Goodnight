@@ -12,35 +12,26 @@ import SwiftUI
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    private var statusBarItem: NSStatusItem? = nil
-    private var statusBarItemPopover: NSPopover? = nil
+    // MARK: - Properties
+    
+    private var statusBarItem: NSStatusItem!
+    private var popoverManager: GNMenuPopoverManager!
+    
+    // MARK: - NSApplicationDelegate
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        self.statusBarItem?.button?.title = "💤"
+        self.statusBarItem.button?.title = "💤"
         
-        self.statusBarItemPopover = NSPopover()
-        self.statusBarItemPopover!.behavior = .transient
-        self.statusBarItemPopover!.contentViewController = NSHostingController(rootView: MenuBarPopoverView())
+        self.popoverManager = GNMenuPopoverManager(anchoredTo: self.statusBarItem.button!)
+        self.statusBarItem.button?.action = #selector(self.popoverManager.toggle)
         
-        self.statusBarItem?.button?.action = #selector(self.toggleStatusBarItemPopover)
-    }
-    
-    @objc private func toggleStatusBarItemPopover() {
-        if let popover = self.statusBarItemPopover {
-            if let button = self.statusBarItem?.button {
-                if (popover.isShown) {
-                    popover.performClose(self)
-                } else {
-                    popover.show(relativeTo: .zero, of: button, preferredEdge: .minY)
-                    NSApp.activate(ignoringOtherApps: true)
-                }
-            }
-        }
+        let menuBuilder = GNMenuBuilder(popoverManager: self.popoverManager)
+        self.statusBarItem.menu = menuBuilder.buildMenu()
     }
     
     func applicationWillResignActive(_ notification: Notification) {
-        self.statusBarItemPopover?.performClose(self)
+        self.popoverManager.close()
     }
 
 }
