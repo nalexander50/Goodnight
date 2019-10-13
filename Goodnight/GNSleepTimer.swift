@@ -9,11 +9,11 @@
 import Foundation
 import AppKit
 
+/// Indicates under what conditions the device should sleep.
 enum GNSleepTimer {
-    case forMinutes(_ minutes: Int)
-    case forHours(_ hours: Int)
+    case afterMinutes(_ minutes: Int)
+    case afterHours(_ hours: Int)
     case until(_ date: Date)
-    case until(batteryPercentage: Double)
-    case until(batteryTimeRemaining: TimeInterval)
-    case whileAppIsRunning(_ application: NSRunningApplication) // NSWorkspace.shared.runningApplications
+    case whileBatteryAbove(percentage: Int)
+    case whileAppIsRunning(application: NSRunningApplication) // NSWorkspace.shared.runningApplications
 }

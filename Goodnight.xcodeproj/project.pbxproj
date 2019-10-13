@@ -12,7 +12,7 @@
 		0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C30E234C15FE008AB036 /* Assets.xcassets */; };
 		0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C311234C15FE008AB036 /* Preview Assets.xcassets */; };
 		0138C315234C15FE008AB036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0138C313234C15FE008AB036 /* Main.storyboard */; };
-		0138C31E234C350D008AB036 /* GNSleepManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31D234C350C008AB036 /* GNSleepManager.swift */; };
+		0138C31E234C350D008AB036 /* GNSleepScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31D234C350C008AB036 /* GNSleepScheduler.swift */; };
 		0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31F234C35AF008AB036 /* PMSetInterface.swift */; };
 		0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */; };
 		01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */; };
@@ -33,18 +33,18 @@
 		0138C314234C15FE008AB036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0138C316234C15FE008AB036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0138C317234C15FE008AB036 /* Goodnight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goodnight.entitlements; sourceTree = "<group>"; };
-		0138C31D234C350C008AB036 /* GNSleepManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepManager.swift; sourceTree = "<group>"; };
+		0138C31D234C350C008AB036 /* GNSleepScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepScheduler.swift; sourceTree = "<group>"; };
 		0138C31F234C35AF008AB036 /* PMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetInterface.swift; sourceTree = "<group>"; };
 		0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetBatteryInformation.swift; sourceTree = "<group>"; };
 		01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
 		01446AD7234D7249000B0318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0148CD2E2350227A0094E14B /* GNMenuPopoverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNMenuPopoverManager.swift; sourceTree = "<group>"; };
+		01DC3E66235032D700FF1CDF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		01DDB55D2350056F002B78DF /* NSMenuItem+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+NSAttributedString.swift"; sourceTree = "<group>"; };
 		01DDB56023501004002B78DF /* GNMenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNMenuBuilder.swift; sourceTree = "<group>"; };
 		01DDB56423501269002B78DF /* GNSleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepTimer.swift; sourceTree = "<group>"; };
 		01DDB56623501775002B78DF /* GNActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNActionableMenuItem.swift; sourceTree = "<group>"; };
 		01DDB56823501998002B78DF /* NSMenu+ActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenu+ActionableMenuItem.swift"; sourceTree = "<group>"; };
-		01DC3E66235032D700FF1CDF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				01DDB55C23500558002B78DF /* Extensions */,
 				0138C30A234C15FD008AB036 /* AppDelegate.swift */,
-				0138C31D234C350C008AB036 /* GNSleepManager.swift */,
+				0138C31D234C350C008AB036 /* GNSleepScheduler.swift */,
 				01DDB56423501269002B78DF /* GNSleepTimer.swift */,
 				01446AD5234D712F000B0318 /* PMSet Utilities */,
 				01DDB55F23500FED002B78DF /* Menu */,
@@ -206,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DC3E67235032D700FF1CDF /* .gitignore in Resources */,
 				0138C315234C15FE008AB036 /* Main.storyboard in Resources */,
 				0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */,
 				0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */,
@@ -227,7 +226,7 @@
 				0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */,
 				0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */,
 				01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */,
-				0138C31E234C350D008AB036 /* GNSleepManager.swift in Sources */,
+				0138C31E234C350D008AB036 /* GNSleepScheduler.swift in Sources */,
 				01DDB55E2350056F002B78DF /* NSMenuItem+NSAttributedString.swift in Sources */,
 				0138C30B234C15FD008AB036 /* AppDelegate.swift in Sources */,
 				0148CD2F2350227A0094E14B /* GNMenuPopoverManager.swift in Sources */,

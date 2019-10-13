@@ -21,7 +21,7 @@ class GNMenuPopoverManager {
     // MARK: - Initializers
     
     /**
-     Creates a new popover provider with the popover anchored to the specified view. Inside the popover, a hosting controller presents a SwiftUI view.
+     Creates a new popover manager with the popover anchored to the specified view. Inside the popover, a hosting controller presents a SwiftUI view.
      
      - Parameter anchor: View to which the popover will be anchored.
      - Parameter content: SwiftUI view to be displayed inside the popover

@@ -22,8 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         self.statusBarItem.button?.title = "💤"
+        self.statusBarItem.button?.toolTip = "Sleeping Soon"
         
-        self.popoverManager = GNMenuPopoverManager(anchoredTo: self.statusBarItem.button!)
+        self.popoverManager = GNMenuPopoverManager(anchoredTo: self.statusBarItem.button!, withContent: MenuBarPopoverView())
         self.statusBarItem.button?.action = #selector(self.popoverManager.toggle)
         
         let menuBuilder = GNMenuBuilder(popoverManager: self.popoverManager)
