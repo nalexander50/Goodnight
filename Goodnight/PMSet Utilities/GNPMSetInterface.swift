@@ -1,15 +1,15 @@
 //
-//  PMSetInterface.swift
+//  GNPMSetInterface.swift
 //  Goodnight
 //
-//  Created by Nick Alexander on 10/7/19.
+//  Created by Nick Alexander on 10/26/19.
 //  Copyright © 2019 Nick Alexander. All rights reserved.
 //
 
 import Foundation
 
 /// A Swift wrapper around the `pmset` command-line utility packaged with macOS.
-class PMSetInterface {
+class GNPMSetInterface {
     
     // MARK: - Constants
     
@@ -88,14 +88,14 @@ class PMSetInterface {
      - Returns: A structure representing the current device's battery information. If the battery information cannot be read, returns `nil`.
      - Warning: The `pmset` command runs synchronously and will block until the `pmset` process exits.
      */
-    func getBatteryStatus() -> PMSetBatteryInformation? {
+    func getBatteryStatus() -> GNPMSetBatteryInformation? {
         let args = ["-g", "batt"]
         let process = self.createProcess(withArguments: args)
         process.launch()
         process.waitUntilExit()
         
         if let output = self.readProcessOutput() {
-            return PMSetBatteryInformation(fromOutput: output)
+            return GNPMSetBatteryInformation(fromOutput: output)
         } else {
             return nil
         }

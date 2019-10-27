@@ -1,8 +1,8 @@
 //
-//  BatteryInformation.swift
+//  GNPMSetBatteryInformation.swift
 //  Goodnight
 //
-//  Created by Nick Alexander on 10/7/19.
+//  Created by Nick Alexander on 10/26/19.
 //  Copyright © 2019 Nick Alexander. All rights reserved.
 //
 
@@ -20,7 +20,7 @@ import Foundation
  The above command will return information for devices without an internal battery, but the information will be unremarkable.
  
  */
-struct PMSetBatteryInformation {
+struct GNPMSetBatteryInformation {
     
     // MARK: - Enums
     
@@ -65,9 +65,9 @@ struct PMSetBatteryInformation {
      Initializes Battery Information from the string output of the `pmset` utility.
      */
     init(fromOutput output: String) {
-        self.powerSource = PMSetBatteryInformation.determinePowerSource(from: output)
-        self.chargingStatus = PMSetBatteryInformation.determineChargingStatus(from: output)
-        (self.batteryPercentage, self.batteryTimeRemaining) = PMSetBatteryInformation.determineBatteryLevel(from: output)
+        self.powerSource = GNPMSetBatteryInformation.determinePowerSource(from: output)
+        self.chargingStatus = GNPMSetBatteryInformation.determineChargingStatus(from: output)
+        (self.batteryPercentage, self.batteryTimeRemaining) = GNPMSetBatteryInformation.determineBatteryLevel(from: output)
     }
     
     /**

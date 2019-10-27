@@ -1,8 +1,8 @@
 //
-//  NSMenuItem+Closure.swift
+//  GNActionableMenuItem.swift
 //  Goodnight
 //
-//  Created by Nick Alexander on 10/10/19.
+//  Created by Nick Alexander on 10/20/19.
 //  Copyright © 2019 Nick Alexander. All rights reserved.
 //
 
