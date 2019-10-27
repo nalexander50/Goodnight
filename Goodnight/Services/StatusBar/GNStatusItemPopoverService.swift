@@ -19,7 +19,10 @@ class GNStatusItemPopoverService {
     // MARK: - Initializers
     
     init(popoverStream: GNPopoverStream) {
-        self.popoverSubscription = popoverStream.sink { self.popover = $0 }
+        self.popoverSubscription = popoverStream.sink { popover in
+            self.popover?.performClose(self)
+            self.popover = popover
+        }
     }
     
     deinit {
