@@ -1,0 +1,16 @@
+disabled_rules: # rule identifiers to exclude from running
+  # Find all the available rules by running:
+  # swiftlint rules
+  - line_length
+  - trailing_whitespace
+  - trailing_comma
+  - switch_case_alignment
+  - void_return
+opt_in_rules: # some rules are only opt-in
+  # Find all the available rules by running:
+  # swiftlint rules
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+  - explicit_self

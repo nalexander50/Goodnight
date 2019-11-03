@@ -1,0 +1,34 @@
+--allman false
+--binarygrouping 4,8
+--closingparen balanced
+--commas always
+--conflictmarkers reject
+--decimalgrouping 3,6
+--elseposition same-line
+--empty tuple
+--exponentcase lowercase
+--exponentgrouping enabled
+--fractiongrouping enabled
+--fragment false
+--header ignore
+--hexgrouping 4,8
+--hexliteralcase uppercase
+--ifdef indent
+--importgrouping alphabetized
+--indent 4
+--indentcase true
+--linebreaks lf
+--octalgrouping 4,8
+--operatorfunc spaced
+--patternlet hoist
+--ranges no-space
+--self insert
+--selfrequired 
+--semicolons inline
+--trailingclosures 
+--trimwhitespace always
+--wraparguments preserve
+--wrapcollections preserve
+--xcodeindentation disabled
+--disable blankLinesAtEndOfScope,blankLinesAtStartOfScope,consecutiveBlankLines,fileHeader,emptyBraces,unusedArguments
+--enable isEmpty,blankLinesAroundMark

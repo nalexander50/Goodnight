@@ -7,48 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0138C30B234C15FD008AB036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C30A234C15FD008AB036 /* AppDelegate.swift */; };
-		0138C30D234C15FD008AB036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C30C234C15FD008AB036 /* ContentView.swift */; };
-		0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C30E234C15FE008AB036 /* Assets.xcassets */; };
-		0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138C311234C15FE008AB036 /* Preview Assets.xcassets */; };
-		0138C315234C15FE008AB036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0138C313234C15FE008AB036 /* Main.storyboard */; };
-		0138C31E234C350D008AB036 /* GNSleepScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31D234C350C008AB036 /* GNSleepScheduler.swift */; };
-		0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C31F234C35AF008AB036 /* PMSetInterface.swift */; };
-		0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */; };
-		01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */; };
-		0148CD2F2350227A0094E14B /* GNMenuPopoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148CD2E2350227A0094E14B /* GNMenuPopoverManager.swift */; };
-		01DDB55E2350056F002B78DF /* NSMenuItem+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB55D2350056F002B78DF /* NSMenuItem+NSAttributedString.swift */; };
-		01DDB56123501004002B78DF /* GNMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB56023501004002B78DF /* GNMenuBuilder.swift */; };
-		01DDB56523501269002B78DF /* GNSleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB56423501269002B78DF /* GNSleepTimer.swift */; };
-		01DDB56723501775002B78DF /* GNActionableMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB56623501775002B78DF /* GNActionableMenuItem.swift */; };
-		01DDB56923501998002B78DF /* NSMenu+ActionableMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDB56823501998002B78DF /* NSMenu+ActionableMenuItem.swift */; };
+		011ACC41236E3E1B003D03F1 /* GNTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */; };
+		011ACC43236E4E2B003D03F1 /* GNScheduledSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */; };
+		011ACC46236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */; };
+		011ACC48236E4EDE003D03F1 /* GNSleepConditionsSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */; };
+		011ACC4A236E5048003D03F1 /* GNStatusItemPopoverSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */; };
+		011ACC4C236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */; };
+		01202DE1236BE1C90054087A /* PopoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01202DE0236BE1C90054087A /* PopoverService.swift */; };
+		01236E22236E885B006D96C9 /* GNDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E21236E885B006D96C9 /* GNDatePickerView.swift */; };
+		01236E24236E9651006D96C9 /* GNDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E23236E9651006D96C9 /* GNDatePickerViewModel.swift */; };
+		01236E26236E98A5006D96C9 /* NSPopover+NSHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E25236E98A5006D96C9 /* NSPopover+NSHostingController.swift */; };
+		01236E2A236E9FB0006D96C9 /* GNPopoverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E29236E9FB0006D96C9 /* GNPopoverState.swift */; };
+		01236E2B236EA825006D96C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBB7C1235CF8B8006E2F2E /* Assets.xcassets */; };
+		0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534723654D18002A6DF3 /* GNPMSetInterface.swift */; };
+		0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */; };
+		0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */; };
+		01894BA2236555C5000C688B /* GNCountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01894BA1236555C5000C688B /* GNCountdownViewModel.swift */; };
+		01894BA4236555D0000C688B /* GNCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01894BA3236555D0000C688B /* GNCountdownView.swift */; };
+		01A39B212365329B00381E47 /* GNSleepScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A39B202365329B00381E47 /* GNSleepScheduler.swift */; };
+		01BBB7BE235CF8B6006E2F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7BD235CF8B6006E2F2E /* AppDelegate.swift */; };
+		01BBB7C0235CF8B6006E2F2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7BF235CF8B6006E2F2E /* ContentView.swift */; };
+		01BBB7C5235CF8B8006E2F2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBB7C4235CF8B8006E2F2E /* Preview Assets.xcassets */; };
+		01BBB7C8235CF8B8006E2F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBB7C6235CF8B8006E2F2E /* Main.storyboard */; };
+		01BBB7D1235CFFED006E2F2E /* GNStatusBarMenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D0235CFFED006E2F2E /* GNStatusBarMenuService.swift */; };
+		01BBB7D5235D05C5006E2F2E /* GNStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D4235D05C5006E2F2E /* GNStreams.swift */; };
+		01BBB7D7235D05EF006E2F2E /* GNStatusItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D6235D05EF006E2F2E /* GNStatusItemService.swift */; };
+		01BBB7DB235D0E68006E2F2E /* GNStatusItemPopoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7DA235D0E68006E2F2E /* GNStatusItemPopoverService.swift */; };
+		01BBB7E0235D13F7006E2F2E /* GNSleepConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */; };
+		01BBB7E3235D1490006E2F2E /* GNActionableMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7E2235D1490006E2F2E /* GNActionableMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0138C307234C15FD008AB036 /* Goodnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goodnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0138C30A234C15FD008AB036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0138C30C234C15FD008AB036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0138C30E234C15FE008AB036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0138C311234C15FE008AB036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0138C314234C15FE008AB036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0138C316234C15FE008AB036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0138C317234C15FE008AB036 /* Goodnight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goodnight.entitlements; sourceTree = "<group>"; };
-		0138C31D234C350C008AB036 /* GNSleepScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepScheduler.swift; sourceTree = "<group>"; };
-		0138C31F234C35AF008AB036 /* PMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetInterface.swift; sourceTree = "<group>"; };
-		0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSetBatteryInformation.swift; sourceTree = "<group>"; };
-		01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
-		01446AD7234D7249000B0318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0148CD2E2350227A0094E14B /* GNMenuPopoverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNMenuPopoverManager.swift; sourceTree = "<group>"; };
-		01DC3E66235032D700FF1CDF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		01DDB55D2350056F002B78DF /* NSMenuItem+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+NSAttributedString.swift"; sourceTree = "<group>"; };
-		01DDB56023501004002B78DF /* GNMenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNMenuBuilder.swift; sourceTree = "<group>"; };
-		01DDB56423501269002B78DF /* GNSleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepTimer.swift; sourceTree = "<group>"; };
-		01DDB56623501775002B78DF /* GNActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNActionableMenuItem.swift; sourceTree = "<group>"; };
-		01DDB56823501998002B78DF /* NSMenu+ActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenu+ActionableMenuItem.swift"; sourceTree = "<group>"; };
+		011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNTimerFactory.swift; sourceTree = "<group>"; };
+		011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNScheduledSleep.swift; sourceTree = "<group>"; };
+		011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditionsReceiver.swift; sourceTree = "<group>"; };
+		011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditionsSender.swift; sourceTree = "<group>"; };
+		011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverSender.swift; sourceTree = "<group>"; };
+		011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverReceiver.swift; sourceTree = "<group>"; };
+		01202DE0236BE1C90054087A /* PopoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverService.swift; sourceTree = "<group>"; };
+		01236E21236E885B006D96C9 /* GNDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNDatePickerView.swift; sourceTree = "<group>"; };
+		01236E23236E9651006D96C9 /* GNDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNDatePickerViewModel.swift; sourceTree = "<group>"; };
+		01236E25236E98A5006D96C9 /* NSPopover+NSHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPopover+NSHostingController.swift"; sourceTree = "<group>"; };
+		01236E29236E9FB0006D96C9 /* GNPopoverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPopoverState.swift; sourceTree = "<group>"; };
+		0180534723654D18002A6DF3 /* GNPMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetInterface.swift; sourceTree = "<group>"; };
+		0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetBatteryInformation.swift; sourceTree = "<group>"; };
+		0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+NSAttributedString.swift"; sourceTree = "<group>"; };
+		01894BA1236555C5000C688B /* GNCountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNCountdownViewModel.swift; sourceTree = "<group>"; };
+		01894BA3236555D0000C688B /* GNCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNCountdownView.swift; sourceTree = "<group>"; };
+		01A39B202365329B00381E47 /* GNSleepScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepScheduler.swift; sourceTree = "<group>"; };
+		01BBB7BA235CF8B6006E2F2E /* Goodnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goodnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBB7BD235CF8B6006E2F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01BBB7BF235CF8B6006E2F2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01BBB7C1235CF8B8006E2F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01BBB7C4235CF8B8006E2F2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01BBB7C7235CF8B8006E2F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01BBB7C9235CF8B8006E2F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BBB7CA235CF8B8006E2F2E /* Goodnight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goodnight.entitlements; sourceTree = "<group>"; };
+		01BBB7D0235CFFED006E2F2E /* GNStatusBarMenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusBarMenuService.swift; sourceTree = "<group>"; };
+		01BBB7D4235D05C5006E2F2E /* GNStreams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStreams.swift; sourceTree = "<group>"; };
+		01BBB7D6235D05EF006E2F2E /* GNStatusItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemService.swift; sourceTree = "<group>"; };
+		01BBB7DA235D0E68006E2F2E /* GNStatusItemPopoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverService.swift; sourceTree = "<group>"; };
+		01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditions.swift; sourceTree = "<group>"; };
+		01BBB7E2235D1490006E2F2E /* GNActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNActionableMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0138C304234C15FD008AB036 /* Frameworks */ = {
+		01BBB7B7235CF8B6006E2F2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,106 +82,199 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0138C2FE234C15FD008AB036 = {
+		011ACC44236E4E5C003D03F1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				01DC3E66235032D700FF1CDF /* .gitignore */,
-				0138C309234C15FD008AB036 /* Goodnight */,
-				0138C308234C15FD008AB036 /* Products */,
-				01446AD7234D7249000B0318 /* README.md */,
+				011ACC4E236E555F003D03F1 /* StatusItemPopover */,
+				011ACC4D236E5559003D03F1 /* SleepConditions */,
 			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		0138C308234C15FD008AB036 /* Products */ = {
+		011ACC4D236E5559003D03F1 /* SleepConditions */ = {
 			isa = PBXGroup;
 			children = (
-				0138C307234C15FD008AB036 /* Goodnight.app */,
+				011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */,
+				011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */,
 			);
-			name = Products;
+			path = SleepConditions;
 			sourceTree = "<group>";
 		};
-		0138C309234C15FD008AB036 /* Goodnight */ = {
+		011ACC4E236E555F003D03F1 /* StatusItemPopover */ = {
 			isa = PBXGroup;
 			children = (
-				01DDB55C23500558002B78DF /* Extensions */,
-				0138C30A234C15FD008AB036 /* AppDelegate.swift */,
-				0138C31D234C350C008AB036 /* GNSleepScheduler.swift */,
-				01DDB56423501269002B78DF /* GNSleepTimer.swift */,
-				01446AD5234D712F000B0318 /* PMSet Utilities */,
-				01DDB55F23500FED002B78DF /* Menu */,
-				01446AD3234D7100000B0318 /* View */,
-				01446AD4234D710E000B0318 /* Supporting Files */,
-				0138C310234C15FE008AB036 /* Preview Content */,
+				011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */,
+				011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */,
 			);
-			path = Goodnight;
+			path = StatusItemPopover;
 			sourceTree = "<group>";
 		};
-		0138C310234C15FE008AB036 /* Preview Content */ = {
+		01236E20236E8849006D96C9 /* DatePickerView */ = {
 			isa = PBXGroup;
 			children = (
-				0138C311234C15FE008AB036 /* Preview Assets.xcassets */,
+				01236E21236E885B006D96C9 /* GNDatePickerView.swift */,
+				01236E23236E9651006D96C9 /* GNDatePickerViewModel.swift */,
 			);
-			path = "Preview Content";
+			path = DatePickerView;
 			sourceTree = "<group>";
 		};
-		01446AD3234D7100000B0318 /* View */ = {
+		0180534623654CFF002A6DF3 /* PMSet Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				0138C313234C15FE008AB036 /* Main.storyboard */,
-				0138C30C234C15FD008AB036 /* ContentView.swift */,
-				01446AD1234D6E7B000B0318 /* MenuBarPopoverView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		01446AD4234D710E000B0318 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0138C317234C15FE008AB036 /* Goodnight.entitlements */,
-				0138C316234C15FE008AB036 /* Info.plist */,
-				0138C30E234C15FE008AB036 /* Assets.xcassets */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01446AD5234D712F000B0318 /* PMSet Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				0138C31F234C35AF008AB036 /* PMSetInterface.swift */,
-				0138C321234C3C79008AB036 /* PMSetBatteryInformation.swift */,
+				0180534723654D18002A6DF3 /* GNPMSetInterface.swift */,
+				0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */,
 			);
 			path = "PMSet Utilities";
 			sourceTree = "<group>";
 		};
-		01DDB55C23500558002B78DF /* Extensions */ = {
+		01894BA0236555BA000C688B /* CountdownView */ = {
 			isa = PBXGroup;
 			children = (
-				01DDB55D2350056F002B78DF /* NSMenuItem+NSAttributedString.swift */,
-				01DDB56823501998002B78DF /* NSMenu+ActionableMenuItem.swift */,
+				01894BA1236555C5000C688B /* GNCountdownViewModel.swift */,
+				01894BA3236555D0000C688B /* GNCountdownView.swift */,
 			);
-			path = Extensions;
+			path = CountdownView;
 			sourceTree = "<group>";
 		};
-		01DDB55F23500FED002B78DF /* Menu */ = {
+		01A39B23236544C400381E47 /* StatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				01DDB56623501775002B78DF /* GNActionableMenuItem.swift */,
-				01DDB56023501004002B78DF /* GNMenuBuilder.swift */,
-				0148CD2E2350227A0094E14B /* GNMenuPopoverManager.swift */,
+				01BBB7D6235D05EF006E2F2E /* GNStatusItemService.swift */,
+				01BBB7DA235D0E68006E2F2E /* GNStatusItemPopoverService.swift */,
+				01BBB7D0235CFFED006E2F2E /* GNStatusBarMenuService.swift */,
 			);
-			path = Menu;
+			path = StatusBar;
+			sourceTree = "<group>";
+		};
+		01A39B24236544E000381E47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7C1235CF8B8006E2F2E /* Assets.xcassets */,
+				01BBB7C3235CF8B8006E2F2E /* Preview Content */,
+				01BBB7CA235CF8B8006E2F2E /* Goodnight.entitlements */,
+				01BBB7C9235CF8B8006E2F2E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01A39B25236544F300381E47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01A39B272365450000381E47 /* Storyboard */,
+				01A39B26236544FB00381E47 /* SwiftUI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01A39B26236544FB00381E47 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				01236E20236E8849006D96C9 /* DatePickerView */,
+				01894BA0236555BA000C688B /* CountdownView */,
+				01BBB7BF235CF8B6006E2F2E /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		01A39B272365450000381E47 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7C6235CF8B8006E2F2E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		01BBB7B1235CF8B6006E2F2E = {
+			isa = PBXGroup;
+			children = (
+				01BBB7BC235CF8B6006E2F2E /* Goodnight */,
+				01BBB7BB235CF8B6006E2F2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01BBB7BB235CF8B6006E2F2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7BA235CF8B6006E2F2E /* Goodnight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01BBB7BC235CF8B6006E2F2E /* Goodnight */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7BD235CF8B6006E2F2E /* AppDelegate.swift */,
+				01BBB7E1235D1479006E2F2E /* Extensions */,
+				0180534623654CFF002A6DF3 /* PMSet Utilities */,
+				01BBB7DE235D13E9006E2F2E /* Core */,
+				01BBB7DD235D1358006E2F2E /* State */,
+				01A39B25236544F300381E47 /* View */,
+				01BBB7DC235D12FE006E2F2E /* Services */,
+				01A39B24236544E000381E47 /* Supporting Files */,
+			);
+			path = Goodnight;
+			sourceTree = "<group>";
+		};
+		01BBB7C3235CF8B8006E2F2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7C4235CF8B8006E2F2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01BBB7DC235D12FE006E2F2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01A39B23236544C400381E47 /* StatusBar */,
+				01202DE0236BE1C90054087A /* PopoverService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01BBB7DD235D1358006E2F2E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				011ACC44236E4E5C003D03F1 /* Protocols */,
+				01BBB7D4235D05C5006E2F2E /* GNStreams.swift */,
+				01236E29236E9FB0006D96C9 /* GNPopoverState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		01BBB7DE235D13E9006E2F2E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */,
+				01A39B202365329B00381E47 /* GNSleepScheduler.swift */,
+				011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */,
+				011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		01BBB7E1235D1479006E2F2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01BBB7E2235D1490006E2F2E /* GNActionableMenuItem.swift */,
+				0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */,
+				01236E25236E98A5006D96C9 /* NSPopover+NSHostingController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0138C306234C15FD008AB036 /* Goodnight */ = {
+		01BBB7B9235CF8B6006E2F2E /* Goodnight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0138C31A234C15FE008AB036 /* Build configuration list for PBXNativeTarget "Goodnight" */;
+			buildConfigurationList = 01BBB7CD235CF8B8006E2F2E /* Build configuration list for PBXNativeTarget "Goodnight" */;
 			buildPhases = (
-				0138C303234C15FD008AB036 /* Sources */,
-				0138C304234C15FD008AB036 /* Frameworks */,
-				0138C305234C15FD008AB036 /* Resources */,
+				01BBB7B6235CF8B6006E2F2E /* Sources */,
+				01BBB7B7235CF8B6006E2F2E /* Frameworks */,
+				01BBB7B8235CF8B6006E2F2E /* Resources */,
+				011ACC3E236E2701003D03F1 /* SwiftLint */,
+				011ACC3F236E28F2003D03F1 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -165,25 +282,25 @@
 			);
 			name = Goodnight;
 			productName = Goodnight;
-			productReference = 0138C307234C15FD008AB036 /* Goodnight.app */;
+			productReference = 01BBB7BA235CF8B6006E2F2E /* Goodnight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0138C2FF234C15FD008AB036 /* Project object */ = {
+		01BBB7B2235CF8B6006E2F2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Nick Alexander";
 				TargetAttributes = {
-					0138C306234C15FD008AB036 = {
+					01BBB7B9235CF8B6006E2F2E = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = 0138C302234C15FD008AB036 /* Build configuration list for PBXProject "Goodnight" */;
+			buildConfigurationList = 01BBB7B5235CF8B6006E2F2E /* Build configuration list for PBXProject "Goodnight" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,56 +308,108 @@
 				en,
 				Base,
 			);
-			mainGroup = 0138C2FE234C15FD008AB036;
-			productRefGroup = 0138C308234C15FD008AB036 /* Products */;
+			mainGroup = 01BBB7B1235CF8B6006E2F2E;
+			productRefGroup = 01BBB7BB235CF8B6006E2F2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0138C306234C15FD008AB036 /* Goodnight */,
+				01BBB7B9235CF8B6006E2F2E /* Goodnight */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0138C305234C15FD008AB036 /* Resources */ = {
+		01BBB7B8235CF8B6006E2F2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0138C315234C15FE008AB036 /* Main.storyboard in Resources */,
-				0138C312234C15FE008AB036 /* Preview Assets.xcassets in Resources */,
-				0138C30F234C15FE008AB036 /* Assets.xcassets in Resources */,
+				01BBB7C8235CF8B8006E2F2E /* Main.storyboard in Resources */,
+				01BBB7C5235CF8B8006E2F2E /* Preview Assets.xcassets in Resources */,
+				01236E2B236EA825006D96C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		011ACC3E236E2701003D03F1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		011ACC3F236E28F2003D03F1 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n    swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0138C303234C15FD008AB036 /* Sources */ = {
+		01BBB7B6235CF8B6006E2F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DDB56123501004002B78DF /* GNMenuBuilder.swift in Sources */,
-				01DDB56923501998002B78DF /* NSMenu+ActionableMenuItem.swift in Sources */,
-				01DDB56723501775002B78DF /* GNActionableMenuItem.swift in Sources */,
-				0138C30D234C15FD008AB036 /* ContentView.swift in Sources */,
-				0138C322234C3C79008AB036 /* PMSetBatteryInformation.swift in Sources */,
-				0138C320234C35AF008AB036 /* PMSetInterface.swift in Sources */,
-				01446AD2234D6E7B000B0318 /* MenuBarPopoverView.swift in Sources */,
-				0138C31E234C350D008AB036 /* GNSleepScheduler.swift in Sources */,
-				01DDB55E2350056F002B78DF /* NSMenuItem+NSAttributedString.swift in Sources */,
-				0138C30B234C15FD008AB036 /* AppDelegate.swift in Sources */,
-				0148CD2F2350227A0094E14B /* GNMenuPopoverManager.swift in Sources */,
-				01DDB56523501269002B78DF /* GNSleepTimer.swift in Sources */,
+				01BBB7D5235D05C5006E2F2E /* GNStreams.swift in Sources */,
+				01BBB7C0235CF8B6006E2F2E /* ContentView.swift in Sources */,
+				01BBB7E3235D1490006E2F2E /* GNActionableMenuItem.swift in Sources */,
+				011ACC4A236E5048003D03F1 /* GNStatusItemPopoverSender.swift in Sources */,
+				01BBB7D7235D05EF006E2F2E /* GNStatusItemService.swift in Sources */,
+				01BBB7DB235D0E68006E2F2E /* GNStatusItemPopoverService.swift in Sources */,
+				01236E2A236E9FB0006D96C9 /* GNPopoverState.swift in Sources */,
+				01236E26236E98A5006D96C9 /* NSPopover+NSHostingController.swift in Sources */,
+				01BBB7E0235D13F7006E2F2E /* GNSleepConditions.swift in Sources */,
+				011ACC46236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift in Sources */,
+				01894BA4236555D0000C688B /* GNCountdownView.swift in Sources */,
+				01BBB7D1235CFFED006E2F2E /* GNStatusBarMenuService.swift in Sources */,
+				0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */,
+				0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */,
+				01202DE1236BE1C90054087A /* PopoverService.swift in Sources */,
+				011ACC41236E3E1B003D03F1 /* GNTimerFactory.swift in Sources */,
+				01236E22236E885B006D96C9 /* GNDatePickerView.swift in Sources */,
+				01894BA2236555C5000C688B /* GNCountdownViewModel.swift in Sources */,
+				011ACC48236E4EDE003D03F1 /* GNSleepConditionsSender.swift in Sources */,
+				011ACC4C236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift in Sources */,
+				0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */,
+				01A39B212365329B00381E47 /* GNSleepScheduler.swift in Sources */,
+				011ACC43236E4E2B003D03F1 /* GNScheduledSleep.swift in Sources */,
+				01BBB7BE235CF8B6006E2F2E /* AppDelegate.swift in Sources */,
+				01236E24236E9651006D96C9 /* GNDatePickerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0138C313234C15FE008AB036 /* Main.storyboard */ = {
+		01BBB7C6235CF8B8006E2F2E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0138C314234C15FE008AB036 /* Base */,
+				01BBB7C7235CF8B8006E2F2E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -248,7 +417,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0138C318234C15FE008AB036 /* Debug */ = {
+		01BBB7CB235CF8B8006E2F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,7 +477,7 @@
 			};
 			name = Debug;
 		};
-		0138C319234C15FE008AB036 /* Release */ = {
+		01BBB7CC235CF8B8006E2F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,14 +530,14 @@
 			};
 			name = Release;
 		};
-		0138C31B234C15FE008AB036 /* Debug */ = {
+		01BBB7CE235CF8B8006E2F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Goodnight/Supporting Files/Goodnight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -378,20 +547,21 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Goodnight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		0138C31C234C15FE008AB036 /* Release */ = {
+		01BBB7CF235CF8B8006E2F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Goodnight/Supporting Files/Goodnight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Goodnight/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -401,6 +571,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Goodnight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -410,25 +581,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0138C302234C15FD008AB036 /* Build configuration list for PBXProject "Goodnight" */ = {
+		01BBB7B5235CF8B6006E2F2E /* Build configuration list for PBXProject "Goodnight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0138C318234C15FE008AB036 /* Debug */,
-				0138C319234C15FE008AB036 /* Release */,
+				01BBB7CB235CF8B8006E2F2E /* Debug */,
+				01BBB7CC235CF8B8006E2F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0138C31A234C15FE008AB036 /* Build configuration list for PBXNativeTarget "Goodnight" */ = {
+		01BBB7CD235CF8B8006E2F2E /* Build configuration list for PBXNativeTarget "Goodnight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0138C31B234C15FE008AB036 /* Debug */,
-				0138C31C234C15FE008AB036 /* Release */,
+				01BBB7CE235CF8B8006E2F2E /* Debug */,
+				01BBB7CF235CF8B8006E2F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0138C2FF234C15FD008AB036 /* Project object */;
+	rootObject = 01BBB7B2235CF8B6006E2F2E /* Project object */;
 }
