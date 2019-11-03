@@ -7,22 +7,21 @@
 //
 
 import Cocoa
-import SwiftUI
 import Combine
+import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
+
     private var sleepScheduler: GNSleepScheduler!
     private var statusItemService: GNStatusItemService!
-    
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        self.sleepScheduler = GNSleepScheduler(sleepTimerStream: GNStreams.sleepTimerStream)
-        self.statusItemService = GNStatusItemService(popoverStream: GNStreams.statusItemPopoverStream, sleepTimerStream: GNStreams.sleepTimerTwoWayStream)
-    }
-    
-    func applicationWillResignActive(_ notification: Notification) {
-        self.statusItemService.resignActive()
+
+    func applicationDidFinishLaunching(_: Notification) {
+        self.sleepScheduler = GNSleepScheduler()
+        self.statusItemService = GNStatusItemService()
     }
 
+    func applicationWillResignActive(_: Notification) {
+        self.statusItemService.resignActive()
+    }
 }

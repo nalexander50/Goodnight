@@ -6,34 +6,34 @@
 //  Copyright © 2019 Nick Alexander. All rights reserved.
 //
 
-import Foundation
 import Cocoa
 import Combine
+import Foundation
 
 class GNStreams {
-    
+
     // MARK: Initializers
-    
+
     private init() {
-        
+
     }
-    
+
     // MARK: Subjects
-    
-    static var statusItemPopoverTwoWayStream: GNPopoverTwoWayStream = {
-        return GNPopoverTwoWayStream(nil)
+
+    static var statusItemPopoverSenderStream: GNStatusItemPopoverSenderStream = {
+        GNStatusItemPopoverSenderStream(nil)
     }()
-    
-    static var statusItemPopoverStream: GNPopoverStream = {
-        return GNStreams.statusItemPopoverTwoWayStream.eraseToAnyPublisher()
+
+    static var statusItemPopoverReceiverStream: GNStatusItemPopoverReceiverStream = {
+        GNStreams.statusItemPopoverSenderStream.eraseToAnyPublisher()
     }()
-    
-    static var sleepTimerTwoWayStream: GNSleepTimerTwoWayStream = {
-        return GNSleepTimerTwoWayStream(nil)
+
+    static var sleepConditionsSenderStream: GNSleepConditionsSenderStream = {
+        GNSleepConditionsSenderStream(nil)
     }()
-    
-    static var sleepTimerStream: GNSleepTimerStream = {
-        return GNStreams.sleepTimerTwoWayStream.eraseToAnyPublisher()
+
+    static var sleepConditionsReceiverStream: GNSleepConditionsReceiverStream = {
+        GNStreams.sleepConditionsSenderStream.eraseToAnyPublisher()
     }()
-    
+
 }

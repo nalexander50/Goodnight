@@ -9,28 +9,28 @@
 import Cocoa
 import Combine
 
-class GNStatusItemPopoverService {
-    
+class GNStatusItemPopoverService: GNStatusItemPopoverReceiver {
+
     // MARK: - Properties
-    
+
     private var popover: NSPopover?
     private var popoverSubscription: AnyCancellable?
-    
+
     // MARK: - Initializers
-    
-    init(popoverStream: GNPopoverStream) {
-        self.popoverSubscription = popoverStream.sink { popover in
+
+    init() {
+        self.popoverSubscription = self.popoverReceiverStream.sink { popover in
             self.popover?.performClose(self)
             self.popover = popover
         }
     }
-    
+
     deinit {
         self.popoverSubscription?.cancel()
     }
-    
+
     // MARK: - Public Methods
-    
+
     func showPopover(anchoredTo anchor: NSView) {
         if let popover = self.popover {
             if !popover.isShown {
@@ -39,7 +39,7 @@ class GNStatusItemPopoverService {
             }
         }
     }
-    
+
     func closePopover() {
         if let popover = self.popover {
             if popover.isShown {
@@ -47,5 +47,5 @@ class GNStatusItemPopoverService {
             }
         }
     }
-    
+
 }

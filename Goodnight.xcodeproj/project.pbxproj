@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011ACC41236E3E1B003D03F1 /* GNTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */; };
+		011ACC43236E4E2B003D03F1 /* GNScheduledSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */; };
+		011ACC46236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */; };
+		011ACC48236E4EDE003D03F1 /* GNSleepConditionsSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */; };
+		011ACC4A236E5048003D03F1 /* GNStatusItemPopoverSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */; };
+		011ACC4C236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */; };
+		01202DE1236BE1C90054087A /* PopoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01202DE0236BE1C90054087A /* PopoverService.swift */; };
 		0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534723654D18002A6DF3 /* GNPMSetInterface.swift */; };
 		0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */; };
 		0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */; };
@@ -21,13 +28,19 @@
 		01BBB7D1235CFFED006E2F2E /* GNStatusBarMenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D0235CFFED006E2F2E /* GNStatusBarMenuService.swift */; };
 		01BBB7D5235D05C5006E2F2E /* GNStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D4235D05C5006E2F2E /* GNStreams.swift */; };
 		01BBB7D7235D05EF006E2F2E /* GNStatusItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D6235D05EF006E2F2E /* GNStatusItemService.swift */; };
-		01BBB7D9235D0ACB006E2F2E /* GNTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7D8235D0ACB006E2F2E /* GNTypealias.swift */; };
 		01BBB7DB235D0E68006E2F2E /* GNStatusItemPopoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7DA235D0E68006E2F2E /* GNStatusItemPopoverService.swift */; };
-		01BBB7E0235D13F7006E2F2E /* GNSleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7DF235D13F7006E2F2E /* GNSleepTimer.swift */; };
+		01BBB7E0235D13F7006E2F2E /* GNSleepConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */; };
 		01BBB7E3235D1490006E2F2E /* GNActionableMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB7E2235D1490006E2F2E /* GNActionableMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNTimerFactory.swift; sourceTree = "<group>"; };
+		011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNScheduledSleep.swift; sourceTree = "<group>"; };
+		011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditionsReceiver.swift; sourceTree = "<group>"; };
+		011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditionsSender.swift; sourceTree = "<group>"; };
+		011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverSender.swift; sourceTree = "<group>"; };
+		011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverReceiver.swift; sourceTree = "<group>"; };
+		01202DE0236BE1C90054087A /* PopoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverService.swift; sourceTree = "<group>"; };
 		0180534723654D18002A6DF3 /* GNPMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetInterface.swift; sourceTree = "<group>"; };
 		0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetBatteryInformation.swift; sourceTree = "<group>"; };
 		0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+NSAttributedString.swift"; sourceTree = "<group>"; };
@@ -45,9 +58,8 @@
 		01BBB7D0235CFFED006E2F2E /* GNStatusBarMenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusBarMenuService.swift; sourceTree = "<group>"; };
 		01BBB7D4235D05C5006E2F2E /* GNStreams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStreams.swift; sourceTree = "<group>"; };
 		01BBB7D6235D05EF006E2F2E /* GNStatusItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemService.swift; sourceTree = "<group>"; };
-		01BBB7D8235D0ACB006E2F2E /* GNTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNTypealias.swift; sourceTree = "<group>"; };
 		01BBB7DA235D0E68006E2F2E /* GNStatusItemPopoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNStatusItemPopoverService.swift; sourceTree = "<group>"; };
-		01BBB7DF235D13F7006E2F2E /* GNSleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepTimer.swift; sourceTree = "<group>"; };
+		01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSleepConditions.swift; sourceTree = "<group>"; };
 		01BBB7E2235D1490006E2F2E /* GNActionableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNActionableMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +74,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011ACC44236E4E5C003D03F1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				011ACC4E236E555F003D03F1 /* StatusItemPopover */,
+				011ACC4D236E5559003D03F1 /* SleepConditions */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		011ACC4D236E5559003D03F1 /* SleepConditions */ = {
+			isa = PBXGroup;
+			children = (
+				011ACC45236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift */,
+				011ACC47236E4EDE003D03F1 /* GNSleepConditionsSender.swift */,
+			);
+			path = SleepConditions;
+			sourceTree = "<group>";
+		};
+		011ACC4E236E555F003D03F1 /* StatusItemPopover */ = {
+			isa = PBXGroup;
+			children = (
+				011ACC49236E5048003D03F1 /* GNStatusItemPopoverSender.swift */,
+				011ACC4B236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift */,
+			);
+			path = StatusItemPopover;
+			sourceTree = "<group>";
+		};
 		0180534623654CFF002A6DF3 /* PMSet Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				01A39B23236544C400381E47 /* StatusBar */,
+				01202DE0236BE1C90054087A /* PopoverService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,8 +217,8 @@
 		01BBB7DD235D1358006E2F2E /* State */ = {
 			isa = PBXGroup;
 			children = (
+				011ACC44236E4E5C003D03F1 /* Protocols */,
 				01BBB7D4235D05C5006E2F2E /* GNStreams.swift */,
-				01BBB7D8235D0ACB006E2F2E /* GNTypealias.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -186,8 +226,10 @@
 		01BBB7DE235D13E9006E2F2E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				01BBB7DF235D13F7006E2F2E /* GNSleepTimer.swift */,
+				01BBB7DF235D13F7006E2F2E /* GNSleepConditions.swift */,
 				01A39B202365329B00381E47 /* GNSleepScheduler.swift */,
+				011ACC40236E3E1B003D03F1 /* GNTimerFactory.swift */,
+				011ACC42236E4E2B003D03F1 /* GNScheduledSleep.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -211,6 +253,8 @@
 				01BBB7B6235CF8B6006E2F2E /* Sources */,
 				01BBB7B7235CF8B6006E2F2E /* Frameworks */,
 				01BBB7B8235CF8B6006E2F2E /* Resources */,
+				011ACC3E236E2701003D03F1 /* SwiftLint */,
+				011ACC3F236E28F2003D03F1 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -267,6 +311,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		011ACC3E236E2701003D03F1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		011ACC3F236E28F2003D03F1 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n    swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01BBB7B6235CF8B6006E2F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,17 +358,23 @@
 				01BBB7D5235D05C5006E2F2E /* GNStreams.swift in Sources */,
 				01BBB7C0235CF8B6006E2F2E /* ContentView.swift in Sources */,
 				01BBB7E3235D1490006E2F2E /* GNActionableMenuItem.swift in Sources */,
+				011ACC4A236E5048003D03F1 /* GNStatusItemPopoverSender.swift in Sources */,
 				01BBB7D7235D05EF006E2F2E /* GNStatusItemService.swift in Sources */,
 				01BBB7DB235D0E68006E2F2E /* GNStatusItemPopoverService.swift in Sources */,
-				01BBB7E0235D13F7006E2F2E /* GNSleepTimer.swift in Sources */,
+				01BBB7E0235D13F7006E2F2E /* GNSleepConditions.swift in Sources */,
+				011ACC46236E4E7B003D03F1 /* GNSleepConditionsReceiver.swift in Sources */,
 				01894BA4236555D0000C688B /* GNCountdownView.swift in Sources */,
 				01BBB7D1235CFFED006E2F2E /* GNStatusBarMenuService.swift in Sources */,
-				01BBB7D9235D0ACB006E2F2E /* GNTypealias.swift in Sources */,
 				0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */,
 				0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */,
+				01202DE1236BE1C90054087A /* PopoverService.swift in Sources */,
+				011ACC41236E3E1B003D03F1 /* GNTimerFactory.swift in Sources */,
 				01894BA2236555C5000C688B /* GNCountdownViewModel.swift in Sources */,
+				011ACC48236E4EDE003D03F1 /* GNSleepConditionsSender.swift in Sources */,
+				011ACC4C236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift in Sources */,
 				0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */,
 				01A39B212365329B00381E47 /* GNSleepScheduler.swift in Sources */,
+				011ACC43236E4E2B003D03F1 /* GNScheduledSleep.swift in Sources */,
 				01BBB7BE235CF8B6006E2F2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
