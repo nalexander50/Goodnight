@@ -10,7 +10,6 @@ import Combine
 import SwiftUI
 
 struct GNCountdownView: View {
-
     @ObservedObject var viewModel: GNCountdownViewModel
 
     var body: some View {
@@ -34,13 +33,10 @@ struct GNCountdownView: View {
             }
         }.frame(width: 230, height: 230, alignment: .center)
     }
-
 }
 
 struct GNCountdownView_Previews: PreviewProvider {
-
     static var previews: some View {
         GNCountdownView(viewModel: GNCountdownViewModel(targetDate: Date().addingTimeInterval(10)))
     }
-
 }

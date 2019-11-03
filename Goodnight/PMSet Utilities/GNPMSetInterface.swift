@@ -100,5 +100,4 @@ class GNPMSetInterface {
             return nil
         }
     }
-
 }

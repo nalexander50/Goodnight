@@ -11,7 +11,7 @@ import Combine
 
 // MARK: - Type Alias
 
-typealias GNStatusItemPopoverSenderStream = CurrentValueSubject<NSPopover?, Never>
+typealias GNStatusItemPopoverSenderStream = CurrentValueSubject<(popover: NSPopover?, requestedState: GNPopoverState), Never>
 
 // MARK: - Protocol
 

@@ -7,8 +7,9 @@
 //
 
 import Cocoa
+import SwiftUI
 
-class GNStatusBarMenuService: GNSleepConditionsSender {
+class GNStatusBarMenuService: GNSleepConditionsSender, GNStatusItemPopoverSender {
 
     // MARK: - Key Equivalents
 
@@ -135,7 +136,10 @@ class GNStatusBarMenuService: GNSleepConditionsSender {
      - Returns: 'Until' menu item.
      */
     private func buildUntilMenuItem() -> NSMenuItem {
-        let item = GNActionableMenuItem(title: "Until...", keyEquivalent: KeyEquivalents.untilDate.rawValue) {}
+        let item = GNActionableMenuItem(title: "Until...", keyEquivalent: KeyEquivalents.untilDate.rawValue) {
+            let popover = PopoverService.popoverDatePicker()
+            self.popoverSenderStream.send((popover, .open))
+        }
         item.indentationLevel = 1
 
         return item
@@ -201,5 +205,4 @@ class GNStatusBarMenuService: GNSleepConditionsSender {
 
         return item
     }
-
 }

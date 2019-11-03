@@ -25,11 +25,10 @@
 --self insert
 --selfrequired 
 --semicolons inline
---stripunusedargs always
 --trailingclosures 
 --trimwhitespace always
 --wraparguments preserve
 --wrapcollections preserve
 --xcodeindentation disabled
---disable blankLinesAtEndOfScope,blankLinesAtStartOfScope,consecutiveBlankLines,fileHeader,emptyBraces
---enable isEmpty
+--disable blankLinesAtEndOfScope,blankLinesAtStartOfScope,consecutiveBlankLines,fileHeader,emptyBraces,unusedArguments
+--enable isEmpty,blankLinesAroundMark

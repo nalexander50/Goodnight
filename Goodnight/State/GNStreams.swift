@@ -21,7 +21,7 @@ class GNStreams {
     // MARK: Subjects
 
     static var statusItemPopoverSenderStream: GNStatusItemPopoverSenderStream = {
-        GNStatusItemPopoverSenderStream(nil)
+        GNStatusItemPopoverSenderStream((nil, .close))
     }()
 
     static var statusItemPopoverReceiverStream: GNStatusItemPopoverReceiverStream = {
@@ -35,5 +35,4 @@ class GNStreams {
     static var sleepConditionsReceiverStream: GNSleepConditionsReceiverStream = {
         GNStreams.sleepConditionsSenderStream.eraseToAnyPublisher()
     }()
-
 }

@@ -11,7 +11,6 @@ import Foundation
 
 /// Indicates under what conditions the device should sleep.
 enum GNSleepConditions {
-
     case afterMinutesElapsed(_ minutes: Int)
     case afterHoursElapsed(_ hours: Int)
     case afterDate(_ date: Date)
@@ -21,5 +20,4 @@ enum GNSleepConditions {
     #if DEBUG
         case afterSecondsElapsed(_ seconds: Int)
     #endif
-
 }

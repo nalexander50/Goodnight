@@ -13,16 +13,16 @@ class GNStatusItemPopoverService: GNStatusItemPopoverReceiver {
 
     // MARK: - Properties
 
+    private let anchor: NSView
+
     private var popover: NSPopover?
     private var popoverSubscription: AnyCancellable?
 
     // MARK: - Initializers
 
-    init() {
-        self.popoverSubscription = self.popoverReceiverStream.sink { popover in
-            self.popover?.performClose(self)
-            self.popover = popover
-        }
+    init(anchoredTo anchor: NSView) {
+        self.anchor = anchor
+        self.popoverSubscription = popoverReceiverStream.sink(receiveValue: self.onNewPopover)
     }
 
     deinit {
@@ -31,10 +31,10 @@ class GNStatusItemPopoverService: GNStatusItemPopoverReceiver {
 
     // MARK: - Public Methods
 
-    func showPopover(anchoredTo anchor: NSView) {
+    func showPopover() {
         if let popover = self.popover {
             if !popover.isShown {
-                popover.show(relativeTo: .zero, of: anchor, preferredEdge: .minY)
+                popover.show(relativeTo: .zero, of: self.anchor, preferredEdge: .minY)
                 NSApp.activate(ignoringOtherApps: true)
             }
         }
@@ -48,4 +48,17 @@ class GNStatusItemPopoverService: GNStatusItemPopoverReceiver {
         }
     }
 
+    // MARK: - Private Methods
+
+    private func onNewPopover(popover: NSPopover?, requestedState: GNPopoverState) {
+        self.popover?.performClose(self)
+        self.popover = popover
+
+        switch requestedState {
+            case .open:
+                self.popover?.show(relativeTo: .zero, of: self.anchor, preferredEdge: .minY)
+            case .close:
+                self.popover?.performClose(self)
+        }
+    }
 }

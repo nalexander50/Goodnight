@@ -174,5 +174,4 @@ struct GNPMSetBatteryInformation {
 
         return 0.0
     }
-
 }

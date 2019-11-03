@@ -91,5 +91,4 @@ class GNTimerFactory {
         }
         return (nil, timer)
     }
-
 }

@@ -20,7 +20,7 @@ class GNSleepScheduler: GNSleepConditionsSender, GNSleepConditionsReceiver, GNSt
     // MARK: Initializers
 
     init() {
-        self.conditionsSubscription = self.sleepConditionsReceiverStream.sink(receiveValue: self.onNewSleepTimer)
+        self.conditionsSubscription = sleepConditionsReceiverStream.sink(receiveValue: self.onNewSleepTimer)
     }
 
     deinit {
@@ -44,7 +44,7 @@ class GNSleepScheduler: GNSleepConditionsSender, GNSleepConditionsReceiver, GNSt
     func cancelScheduledSleep() {
         self.scheduledSleep?.timer.invalidate()
         self.scheduledSleep = nil
-        self.popoverSenderStream.send(nil)
+        popoverSenderStream.send((nil, .close))
     }
 
     // MARK: Private Methods
@@ -56,7 +56,7 @@ class GNSleepScheduler: GNSleepConditionsSender, GNSleepConditionsReceiver, GNSt
             // todo what about non-date-based timers?
             if let fireDate = self.scheduledSleep?.fireDate {
                 let popover = PopoverService.popoverCountingDownTo(fireDate)
-                self.popoverSenderStream.send(popover)
+                popoverSenderStream.send((popover, .close))
             }
         } else {
             self.cancelScheduledSleep()
@@ -67,5 +67,4 @@ class GNSleepScheduler: GNSleepConditionsSender, GNSleepConditionsReceiver, GNSt
         print("Goodnight")
         self.cancelScheduledSleep()
     }
-
 }

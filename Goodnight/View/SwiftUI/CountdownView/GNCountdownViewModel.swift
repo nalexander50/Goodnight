@@ -50,7 +50,7 @@ class GNCountdownViewModel: ObservableObject, GNSleepConditionsSender {
     // MARK: Public Methods
 
     func cancelSleepTimer() {
-        self.sleepConditionsSenderStream.send(nil)
+        sleepConditionsSenderStream.send(nil)
     }
 
     // MARK: - Private Methods
@@ -78,5 +78,4 @@ class GNCountdownViewModel: ObservableObject, GNSleepConditionsSender {
             }
         })
     }
-
 }

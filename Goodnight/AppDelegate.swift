@@ -12,7 +12,6 @@ import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     private var sleepScheduler: GNSleepScheduler!
     private var statusItemService: GNStatusItemService!
 

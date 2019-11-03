@@ -10,7 +10,6 @@ import Cocoa
 import Foundation
 
 extension NSMenuItem {
-
     convenience init(attributedTitle: NSAttributedString) {
         self.init()
         self.attributedTitle = attributedTitle
@@ -31,5 +30,4 @@ extension NSMenuItem {
         ])
         return NSMenuItem(attributedTitle: attributedString, action: action, keyEquivalent: keyEquivalent)
     }
-
 }

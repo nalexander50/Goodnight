@@ -25,10 +25,14 @@ class PopoverService: GNStatusItemPopoverSender, GNStatusItemPopoverReceiver {
         let countdownViewModel = GNCountdownViewModel(targetDate: fireDate)
         let countdownView = GNCountdownView(viewModel: countdownViewModel)
 
-        let popover = NSPopover()
-        popover.contentViewController = NSHostingController(rootView: countdownView)
-
+        let popover = NSPopover(hostingController: NSHostingController(rootView: countdownView))
         return popover
     }
 
+    static func popoverDatePicker() -> NSPopover {
+        let datePickerViewModel = GNDatePickerViewModel()
+        let datePickerView = GNDatePickerView(viewModel: datePickerViewModel)
+        let popover = NSPopover(hostingController: NSHostingController(rootView: datePickerView))
+        return popover
+    }
 }

@@ -9,9 +9,7 @@
 import Foundation
 
 struct GNScheduledSleep {
-
     var fireDate: Date?
     var timer: Timer
     var conditions: GNSleepConditions
-
 }

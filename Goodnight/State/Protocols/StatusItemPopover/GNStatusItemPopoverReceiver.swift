@@ -11,7 +11,7 @@ import Combine
 
 // MARK: - Type Alias
 
-typealias GNStatusItemPopoverReceiverStream = AnyPublisher<NSPopover?, Never>
+typealias GNStatusItemPopoverReceiverStream = AnyPublisher<(popover: NSPopover?, requestedState: GNPopoverState), Never>
 
 // MARK: - Protocol
 
