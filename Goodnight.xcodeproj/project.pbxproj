@@ -19,6 +19,10 @@
 		01236E26236E98A5006D96C9 /* NSPopover+NSHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E25236E98A5006D96C9 /* NSPopover+NSHostingController.swift */; };
 		01236E2A236E9FB0006D96C9 /* GNPopoverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E29236E9FB0006D96C9 /* GNPopoverState.swift */; };
 		01236E2B236EA825006D96C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBB7C1235CF8B8006E2F2E /* Assets.xcassets */; };
+		01236E2E236F5A62006D96C9 /* GNClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E2D236F5A62006D96C9 /* GNClockView.swift */; };
+		01236E30236F5A6D006D96C9 /* GNClockTicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E2F236F5A6D006D96C9 /* GNClockTicksView.swift */; };
+		01236E32236F5A75006D96C9 /* GNClockHandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E31236F5A75006D96C9 /* GNClockHandsView.swift */; };
+		01236E34236F62F6006D96C9 /* GNClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01236E33236F62F6006D96C9 /* GNClockHand.swift */; };
 		0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534723654D18002A6DF3 /* GNPMSetInterface.swift */; };
 		0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */; };
 		0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */; };
@@ -49,6 +53,10 @@
 		01236E23236E9651006D96C9 /* GNDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNDatePickerViewModel.swift; sourceTree = "<group>"; };
 		01236E25236E98A5006D96C9 /* NSPopover+NSHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPopover+NSHostingController.swift"; sourceTree = "<group>"; };
 		01236E29236E9FB0006D96C9 /* GNPopoverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPopoverState.swift; sourceTree = "<group>"; };
+		01236E2D236F5A62006D96C9 /* GNClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNClockView.swift; sourceTree = "<group>"; };
+		01236E2F236F5A6D006D96C9 /* GNClockTicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNClockTicksView.swift; sourceTree = "<group>"; };
+		01236E31236F5A75006D96C9 /* GNClockHandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNClockHandsView.swift; sourceTree = "<group>"; };
+		01236E33236F62F6006D96C9 /* GNClockHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNClockHand.swift; sourceTree = "<group>"; };
 		0180534723654D18002A6DF3 /* GNPMSetInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetInterface.swift; sourceTree = "<group>"; };
 		0180534923654D21002A6DF3 /* GNPMSetBatteryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNPMSetBatteryInformation.swift; sourceTree = "<group>"; };
 		0180534B23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+NSAttributedString.swift"; sourceTree = "<group>"; };
@@ -112,10 +120,21 @@
 		01236E20236E8849006D96C9 /* DatePickerView */ = {
 			isa = PBXGroup;
 			children = (
-				01236E21236E885B006D96C9 /* GNDatePickerView.swift */,
 				01236E23236E9651006D96C9 /* GNDatePickerViewModel.swift */,
+				01236E21236E885B006D96C9 /* GNDatePickerView.swift */,
 			);
 			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		01236E2C236F5A57006D96C9 /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				01236E2D236F5A62006D96C9 /* GNClockView.swift */,
+				01236E2F236F5A6D006D96C9 /* GNClockTicksView.swift */,
+				01236E31236F5A75006D96C9 /* GNClockHandsView.swift */,
+				01236E33236F62F6006D96C9 /* GNClockHand.swift */,
+			);
+			path = ClockView;
 			sourceTree = "<group>";
 		};
 		0180534623654CFF002A6DF3 /* PMSet Utilities */ = {
@@ -169,6 +188,7 @@
 		01A39B26236544FB00381E47 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				01236E2C236F5A57006D96C9 /* ClockView */,
 				01236E20236E8849006D96C9 /* DatePickerView */,
 				01894BA0236555BA000C688B /* CountdownView */,
 				01BBB7BF235CF8B6006E2F2E /* ContentView.swift */,
@@ -377,6 +397,7 @@
 			files = (
 				01BBB7D5235D05C5006E2F2E /* GNStreams.swift in Sources */,
 				01BBB7C0235CF8B6006E2F2E /* ContentView.swift in Sources */,
+				01236E30236F5A6D006D96C9 /* GNClockTicksView.swift in Sources */,
 				01BBB7E3235D1490006E2F2E /* GNActionableMenuItem.swift in Sources */,
 				011ACC4A236E5048003D03F1 /* GNStatusItemPopoverSender.swift in Sources */,
 				01BBB7D7235D05EF006E2F2E /* GNStatusItemService.swift in Sources */,
@@ -390,14 +411,17 @@
 				0180534823654D18002A6DF3 /* GNPMSetInterface.swift in Sources */,
 				0180534C23655218002A6DF3 /* NSMenuItem+NSAttributedString.swift in Sources */,
 				01202DE1236BE1C90054087A /* PopoverService.swift in Sources */,
+				01236E32236F5A75006D96C9 /* GNClockHandsView.swift in Sources */,
 				011ACC41236E3E1B003D03F1 /* GNTimerFactory.swift in Sources */,
 				01236E22236E885B006D96C9 /* GNDatePickerView.swift in Sources */,
 				01894BA2236555C5000C688B /* GNCountdownViewModel.swift in Sources */,
+				01236E34236F62F6006D96C9 /* GNClockHand.swift in Sources */,
 				011ACC48236E4EDE003D03F1 /* GNSleepConditionsSender.swift in Sources */,
 				011ACC4C236E5090003D03F1 /* GNStatusItemPopoverReceiver.swift in Sources */,
 				0180534A23654D21002A6DF3 /* GNPMSetBatteryInformation.swift in Sources */,
 				01A39B212365329B00381E47 /* GNSleepScheduler.swift in Sources */,
 				011ACC43236E4E2B003D03F1 /* GNScheduledSleep.swift in Sources */,
+				01236E2E236F5A62006D96C9 /* GNClockView.swift in Sources */,
 				01BBB7BE235CF8B6006E2F2E /* AppDelegate.swift in Sources */,
 				01236E24236E9651006D96C9 /* GNDatePickerViewModel.swift in Sources */,
 			);
